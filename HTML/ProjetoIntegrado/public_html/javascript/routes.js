@@ -12,3 +12,8 @@ function redirect_to_sport_choice()
     {
     location.href="sport_choice.html";
     };
+   
+function redirect_to_edit_user()
+    {
+    location.href="edit_user.html";
+    };
