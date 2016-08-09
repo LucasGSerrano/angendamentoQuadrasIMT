@@ -8,4 +8,7 @@ function redirect_to_pag_usuario()
     location.href="pag_usuario.html";
     };
 
-
+function redirect_to_sport_choice()
+    {
+    location.href="sport_choice.html";
+    };
