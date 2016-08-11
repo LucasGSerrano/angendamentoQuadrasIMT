@@ -9,11 +9,12 @@
     <body>
         <h4>Sistema de Agendamento de Quadras</h4>
         <div class="pag_login">
-            <label id="userName">Usuário:</label>
-            <input type="text" id="user_field"/><br/><br/>
-            <label id="password">Senha:</label>
-            <input type="text" id="passwordField"/><br/><br/>
-            <button id="button" type="submit" onclick="redirect_to_sport_choice()">Login</button>
+            <%= form_for(:user, :url => {:controller => 'users', :action => 'create_user'}) do |user| %>
+                <label id="userName">Usuário:</label>
+                <%= user.text_field :username %><br/><br/>
+                <label id="password">Senha:</label>
+                <%= user. text_field :password %><br/><br/>
+                <button id="button" type="submit" onclick="redirect_to_sport_choice()">Login</button>
         </div>
     </body>
 </html>
