@@ -12,11 +12,13 @@ and open the template in the editor.
         <script type="text/javascript" src="javascript/routes.js"></script>
     </head>
     <body>
-        <div>
-            <h3>Escolha seu esporte:</h3>
-            <input type="image" src="images/futebol.png" onclick="redirect_to_pag_usuario()">
-            <input type="image" src="images/tênis.png" onclick="redirect_to_pag_usuario()">
-            <input type="image" src="images/volei.png" onclick="redirect_to_pag_usuario()">
+        <h4>Sistema de Agendamento de Quadras</h4>
+        <div class="pag_login">
+            <label id="nome_usuario">Usuário:</label>
+            <input type="text" id="campo_usuario"/><br/><br/>
+            <label id="senha">Senha:</label>
+            <input type="text" id="campo_senha"/><br/><br/>
+            <button id="button" type="submit" onclick="redirect_to_sign_up()">Login</button>
         </div>
     </body>
 </html>

@@ -5,7 +5,7 @@
  */
 function redirect_to_pag_usuario()
     {
-    location.href="pag_usuario.html";
+    location.href="user_page.html";
     };
 
 function redirect_to_sport_choice()
@@ -16,4 +16,9 @@ function redirect_to_sport_choice()
 function redirect_to_edit_user()
     {
     location.href="edit_user.html";
+    };
+    
+function redirect_to_sign_up()
+    {
+    location.href="sign_up.html";
     };
