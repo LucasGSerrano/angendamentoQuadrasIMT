@@ -1,0 +1,31 @@
+<h1>Listing agendamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Datahora</th>
+      <th>Idquadra</th>
+      <th>Usuario registrousuario</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agendamentos.each do |agendamento| %>
+      <tr>
+        <td><%= agendamento.dataHora %></td>
+        <td><%= agendamento.idQuadra %></td>
+        <td><%= agendamento.usuario_registroUsuario %></td>
+        <td><%= link_to 'Show', agendamento %></td>
+        <td><%= link_to 'Edit', edit_agendamento_path(agendamento) %></td>
+        <td><%= link_to 'Destroy', agendamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Agendamento', new_agendamento_path %>

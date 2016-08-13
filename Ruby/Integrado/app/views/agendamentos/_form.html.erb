@@ -1,0 +1,29 @@
+<%= form_for(@agendamento) do |f| %>
+  <% if @agendamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@agendamento.errors.count, "error") %> prohibited this agendamento from being saved:</h2>
+
+      <ul>
+      <% @agendamento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dataHora %><br>
+    <%= f.datetime_select :dataHora %>
+  </div>
+  <div class="field">
+    <%= f.label :idQuadra %><br>
+    <%= f.number_field :idQuadra %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario_registroUsuario %><br>
+    <%= f.text_field :usuario_registroUsuario %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

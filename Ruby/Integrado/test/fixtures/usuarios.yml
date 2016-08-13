@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  registroUsuario: MyString
+  senha: MyString
+  nome: MyString
+  tipoUsuario: 1
+  ultimoAgendamento: 2016-08-13 10:44:15
+  situacaoMatricula: MyString
+  fotoUsuario: MyString
+  emailUsuario: MyString
+  telefone: 1
+  dataCadastro: 2016-08-13 10:44:15
+  dataUpdate: 2016-08-13 10:44:15
+
+two:
+  registroUsuario: MyString
+  senha: MyString
+  nome: MyString
+  tipoUsuario: 1
+  ultimoAgendamento: 2016-08-13 10:44:15
+  situacaoMatricula: MyString
+  fotoUsuario: MyString
+  emailUsuario: MyString
+  telefone: 1
+  dataCadastro: 2016-08-13 10:44:15
+  dataUpdate: 2016-08-13 10:44:15

@@ -1,0 +1,61 @@
+<%= form_for(@usuario) do |f| %>
+  <% if @usuario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@usuario.errors.count, "error") %> prohibited this usuario from being saved:</h2>
+
+      <ul>
+      <% @usuario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :registroUsuario %><br>
+    <%= f.text_field :registroUsuario %>
+  </div>
+  <div class="field">
+    <%= f.label :senha %><br>
+    <%= f.text_field :senha %>
+  </div>
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoUsuario %><br>
+    <%= f.number_field :tipoUsuario %>
+  </div>
+  <div class="field">
+    <%= f.label :ultimoAgendamento %><br>
+    <%= f.datetime_select :ultimoAgendamento %>
+  </div>
+  <div class="field">
+    <%= f.label :situacaoMatricula %><br>
+    <%= f.text_field :situacaoMatricula %>
+  </div>
+  <div class="field">
+    <%= f.label :fotoUsuario %><br>
+    <%= f.text_field :fotoUsuario %>
+  </div>
+  <div class="field">
+    <%= f.label :emailUsuario %><br>
+    <%= f.text_field :emailUsuario %>
+  </div>
+  <div class="field">
+    <%= f.label :telefone %><br>
+    <%= f.number_field :telefone %>
+  </div>
+  <div class="field">
+    <%= f.label :dataCadastro %><br>
+    <%= f.datetime_select :dataCadastro %>
+  </div>
+  <div class="field">
+    <%= f.label :dataUpdate %><br>
+    <%= f.datetime_select :dataUpdate %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

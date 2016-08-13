@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dataHora: 2016-08-13 10:44:30
+  idQuadra: 1
+  usuario_registroUsuario: MyString
+
+two:
+  dataHora: 2016-08-13 10:44:30
+  idQuadra: 1
+  usuario_registroUsuario: MyString

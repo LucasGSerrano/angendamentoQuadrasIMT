@@ -1,0 +1,47 @@
+<h1>Listing usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Registrousuario</th>
+      <th>Senha</th>
+      <th>Nome</th>
+      <th>Tipousuario</th>
+      <th>Ultimoagendamento</th>
+      <th>Situacaomatricula</th>
+      <th>Fotousuario</th>
+      <th>Emailusuario</th>
+      <th>Telefone</th>
+      <th>Datacadastro</th>
+      <th>Dataupdate</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.registroUsuario %></td>
+        <td><%= usuario.senha %></td>
+        <td><%= usuario.nome %></td>
+        <td><%= usuario.tipoUsuario %></td>
+        <td><%= usuario.ultimoAgendamento %></td>
+        <td><%= usuario.situacaoMatricula %></td>
+        <td><%= usuario.fotoUsuario %></td>
+        <td><%= usuario.emailUsuario %></td>
+        <td><%= usuario.telefone %></td>
+        <td><%= usuario.dataCadastro %></td>
+        <td><%= usuario.dataUpdate %></td>
+        <td><%= link_to 'Show', usuario %></td>
+        <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario', new_usuario_path %>

@@ -1,0 +1,39 @@
+<h1>Listing cadastro_usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Registrousuario</th>
+      <th>Emailusuario</th>
+      <th>Senha</th>
+      <th>Telefone</th>
+      <th>Datacadastro</th>
+      <th>Usuario registrousuario</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cadastro_usuarios.each do |cadastro_usuario| %>
+      <tr>
+        <td><%= cadastro_usuario.nome %></td>
+        <td><%= cadastro_usuario.registroUsuario %></td>
+        <td><%= cadastro_usuario.emailUsuario %></td>
+        <td><%= cadastro_usuario.senha %></td>
+        <td><%= cadastro_usuario.telefone %></td>
+        <td><%= cadastro_usuario.dataCadastro %></td>
+        <td><%= cadastro_usuario.usuario_registroUsuario %></td>
+        <td><%= link_to 'Show', cadastro_usuario %></td>
+        <td><%= link_to 'Edit', edit_cadastro_usuario_path(cadastro_usuario) %></td>
+        <td><%= link_to 'Destroy', cadastro_usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cadastro usuario', new_cadastro_usuario_path %>
