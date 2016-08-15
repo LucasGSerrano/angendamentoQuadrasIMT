@@ -1,9 +1,9 @@
 Integrado::Application.routes.draw do
-  get "login/index" 
+  get "login/index"
 
   root 'login#index'
 
-  get "log_in" => "usuarios#index"
+  post "log_in" => "login#login"
 
   resources :cadastro_usuarios
 
