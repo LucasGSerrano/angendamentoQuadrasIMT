@@ -1,12 +1,12 @@
-<%= form_for( log_in_path, method: :post) do |f| %>
-	<body>
-	  <h4>Sistema de Agendamento de Quadras</h4>
-	  <div class="pag_login">
-	    <label id="nome_usuario">Usuário:</label>
-     	<%= f.text_field :nome %><br/><br/>
-      <label id="senha">Senha:</label>
-			<%= f.text_field :senha %><br/><br/>
-	    <%= submit_tag("Log In") %>
-	  </div>
-	</body>
-<% end %>
+<body>
+	<h4>Sistema de Agendamento de Quadras</h4>
+	<%= form_for( :login, url: login_path) do |f| %>	
+		<div class="pag_login">
+			<label id="nome_usuario" <%= f.label :nome %>></label>
+	     		<%= f.text_field :nome %><br/><br/>
+	       	<label id="senha">Senha:</label>
+			<%= f.password_field :senha %><br/><br/>
+			<%= submit_tag("Log In") %>
+		</div>
+	<% end %>
+</body>

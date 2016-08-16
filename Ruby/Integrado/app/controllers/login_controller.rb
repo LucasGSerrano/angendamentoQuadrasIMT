@@ -1,15 +1,15 @@
 class LoginController < ApplicationController
-  def index
-  end
+	def index
 
-  def login
-  	user = User.authenticate(params[:nome], params[:senha])
-  	if user
-  		session[:user_id] = user.id
-		redirect_to root_url, :notice => "Logged in!"
-	else
-		redirect_to cadastro_usuario_path
-    		flash.now.alert = "Invalid email or password"
 	end
- end
+
+	def login
+		user = Usuario.where(:nome => params[:login][:nome].downcase)
+		if user && user.authenticate(params[:nome], params[:senha])
+			login[:nome] = user.nome
+			redirect_to usuarios_path, :notice => "Logado com Sucesso!"
+		else
+			redirect_to cadastro_usuarios_path
+		end
+	end
 end

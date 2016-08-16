@@ -1,58 +1,33 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Registrousuario:</strong>
-  <%= @usuario.registroUsuario %>
-</p>
-
-<p>
-  <strong>Senha:</strong>
-  <%= @usuario.senha %>
-</p>
-
-<p>
   <strong>Nome:</strong>
   <%= @usuario.nome %>
 </p>
 
 <p>
-  <strong>Tipousuario:</strong>
-  <%= @usuario.tipoUsuario %>
-</p>
-
-<p>
-  <strong>Ultimoagendamento:</strong>
+  <strong>Último Agendamento:</strong>
   <%= @usuario.ultimoAgendamento %>
 </p>
 
 <p>
-  <strong>Situacaomatricula:</strong>
+  <strong>Situação de Matrícula:</strong>
   <%= @usuario.situacaoMatricula %>
 </p>
 
 <p>
-  <strong>Fotousuario:</strong>
+  <strong>Foto:</strong>
   <%= @usuario.fotoUsuario %>
 </p>
 
 <p>
-  <strong>Emailusuario:</strong>
+  <strong>Email:</strong>
   <%= @usuario.emailUsuario %>
 </p>
 
 <p>
   <strong>Telefone:</strong>
   <%= @usuario.telefone %>
-</p>
-
-<p>
-  <strong>Datacadastro:</strong>
-  <%= @usuario.dataCadastro %>
-</p>
-
-<p>
-  <strong>Dataupdate:</strong>
-  <%= @usuario.dataUpdate %>
 </p>
 
 <%= link_to 'Edit', edit_usuario_path(@usuario) %> |
