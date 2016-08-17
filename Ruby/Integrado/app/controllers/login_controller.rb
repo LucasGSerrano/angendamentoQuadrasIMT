@@ -4,14 +4,10 @@ class LoginController < ApplicationController
 	end
 
 	def login
-		@user = Usuario.where(:nome => params[:login][:nome], :senha => params[:login][:senha] )
+		@user = Usuario.where(:nome => params[:login][:nome], :senha => params[:login][:senha]).first
 
-		if @user.authenticate(params[:nome], params[:senha])
-			login[:nome] = user.nome
-			login[:senha] = user.senha
+		if @user.authenticate(@user.nome, @user.senha )
 			redirect_to usuarios_path, :notice => "Logado com Sucesso!"
-		else
-			redirect_to new_cadastro_usuario_path
 		end
 	end
 end
