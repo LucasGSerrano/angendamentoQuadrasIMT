@@ -3,7 +3,6 @@
 <table>
   <thead>
     <tr>
-      <th>Senha</th>
       <th>Nome</th>
       <th>Situação de Matrícula</th>
       <th>Foto</th>
@@ -18,7 +17,6 @@
   <tbody>
     <% @usuarios.each do |usuario| %>
       <tr>
-        <td><%= usuario.senha %></td>
         <td><%= usuario.nome %></td>
         <td><%= usuario.situacaoMatricula %></td>
         <td><%= usuario.fotoUsuario %></td>

@@ -16,28 +16,16 @@
     <%= f.text_field :nome %>
   </div>
   <div class="field">
-    <%= f.label :registroUsuario %><br>
-    <%= f.text_field :registroUsuario %>
-  </div>
-  <div class="field">
     <%= f.label :emailUsuario %><br>
     <%= f.text_field :emailUsuario %>
   </div>
   <div class="field">
     <%= f.label :senha %><br>
-    <%= f.text_field :senha %>
+    <%= f.password_field :senha %>
   </div>
   <div class="field">
     <%= f.label :telefone %><br>
     <%= f.number_field :telefone %>
-  </div>
-  <div class="field">
-    <%= f.label :dataCadastro %><br>
-    <%= f.datetime_select :dataCadastro %>
-  </div>
-  <div class="field">
-    <%= f.label :usuario_registroUsuario %><br>
-    <%= f.text_field :usuario_registroUsuario %>
   </div>
   <div class="actions">
     <%= f.submit %>
