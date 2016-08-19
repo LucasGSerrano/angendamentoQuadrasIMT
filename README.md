@@ -8,6 +8,7 @@ Projeto de alunos do Quarto ano de Engenharia da Computação do Instituto Maua 
   - Lista de Prioridade.
   - Verificar conexão do BD com o programa. (deu ruim no meu pc).
   - Página de como ficaria usuário, cadastro, administrador (preciso para ver como fazer o backend).
+  
 
 - Perguntar para Valdomiro:
   - Esportes que eles são responsáveis por administrar.
@@ -24,4 +25,6 @@ Projeto de alunos do Quarto ano de Engenharia da Computação do Instituto Maua 
   - Páginas de erros de sistema.
   - Loading animadinho – espera de confirmação (bolas de esportes).
   - Falta botão de cancelamento do agendamento no calendária.
+  - Manter padrões dos sistemas da Maua
+  - Manter cinza cores frias ou quentes
 
