@@ -1,19 +1,6 @@
-<h1>Listing usuarios</h1>
+<h3>Bem-Vindo à Sua Página</h3>
 
 <table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Situação de Matrícula</th>
-      <th>Foto</th>
-      <th>Email</th>
-      <th>Telefone</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @usuarios.each do |usuario| %>
       <tr>
@@ -22,14 +9,10 @@
         <td><%= usuario.fotoUsuario %></td>
         <td><%= usuario.emailUsuario %></td>
         <td><%= usuario.telefone %></td>
-        <td><%= link_to 'Show', usuario %></td>
-        <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
-        <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Editar perfil', edit_usuario_path(usuario) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Usuario', new_usuario_path %>

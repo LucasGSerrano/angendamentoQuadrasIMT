@@ -21,9 +21,6 @@
         <td><%= cadastro_usuario.emailUsuario %></td>
         <td><%= cadastro_usuario.senha %></td>
         <td><%= cadastro_usuario.telefone %></td>
-        <td><%= link_to 'Show', cadastro_usuario %></td>
-        <td><%= link_to 'Edit', edit_cadastro_usuario_path(cadastro_usuario) %></td>
-        <td><%= link_to 'Destroy', cadastro_usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -31,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Cadastro usuario', new_cadastro_usuario_path %>
+<%= link_to 'Cadastrar', new_cadastro_usuario_path %>

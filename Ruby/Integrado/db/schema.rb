@@ -34,19 +34,21 @@ ActiveRecord::Schema.define(version: 20160813134442) do
   end
 
   create_table "usuarios", force: true do |t|
-    t.string   "registroUsuario"
-    t.string   "senha"
-    t.string   "nome"
-    t.integer  "tipoUsuario"
-    t.datetime "ultimoAgendamento"
-    t.string   "situacaoMatricula"
+    t.string   "registroUsuario",               null: false
+    t.string   "senha",                         null: false
+    t.string   "nome",                          null: false
+    t.integer  "tipoUsuario",       default: 0, null: false
+    t.datetime "ultimoAgendamento",             null: false
+    t.string   "situacaoMatricula",             null: false
     t.string   "fotoUsuario"
-    t.string   "emailUsuario"
+    t.string   "emailUsuario",                  null: false
     t.integer  "telefone"
     t.datetime "dataCadastro"
     t.datetime "dataUpdate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "usuarios", ["emailUsuario"], name: "emailUsuario_UNIQUE", unique: true, using: :btree
 
 end

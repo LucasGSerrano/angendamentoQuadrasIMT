@@ -2,11 +2,15 @@
 	<h4>Sistema de Agendamento de Quadras</h4>
 	<%= form_for( :login, url: login_path) do |f| %>	
 		<div class="pag_login">
-			<label id="nome_usuario" <%= f.label :nome %>></label>
+			<label id="nome_usuario" >Nome:</label>
 	     		<%= f.text_field :nome %><br/><br/>
 	       	<label id="senha">Senha:</label>
-			<%= f.password_field :senha %><br/><br/>
-			<%= submit_tag("Log In") %>
+	       	<%= f.password_field :senha %><br/><br/>
+			<%= submit_tag("Log In") %><br/><br/>
 		</div>
+	<% end %>
+
+	<%= form_for(:novo_usuario, url: new_cadastro_usuario_path, method: :get) do |f| %>
+		<%= submit_tag("Novo Usuário") %>
 	<% end %>
 </body>

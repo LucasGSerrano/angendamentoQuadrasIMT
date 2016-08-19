@@ -69,6 +69,6 @@ class CadastroUsuariosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cadastro_usuario_params
-      params.require(:cadastro_usuario).permit(:nome, :registroUsuario, :emailUsuario, :senha, :telefone, :dataCadastro, :usuario_registroUsuario)
+      params.require(:cadastro_usuario).permit(:nome, :registroUsuario, :emailUsuario, :senha, :telefone)
     end
 end
