@@ -1,14 +1,25 @@
-<body>
-	<h4>Sistema de Agendamento de Quadras</h4>
-	<%= form_for(:login, url: login_path) do |f| %>
-		<div class="pag_login">
-			<label id="nome_usuario" >Nome:</label>
-   		<%= f.text_field :nome %><br/><br/>
-     	<label id="senha">Senha:</label>
-     	<%= f.password_field :senha %><br/><br/>
-			<%= submit_tag("Log In") %><br/><br/>
-		</div>
-	<% end %>
+<head>
+        <title>Agendamento de Quadras CEAF</title>
+</head>
 
-  <%= link_to "Novo Usuário", new_cadastro_usuario_path(@usuario) %>
+<body>
+	<div class="tudo">
+		<%= form_for(:login, url: login_path) do |f| %>
+			<div class="itemlogin">
+				<img id="iconemaua" src="images/Icon.png" alt="mauaicone">
+			</div>
+
+			<div class="itemlogin" id="entrar"><br/>
+				<label id="nome_usuario">Usuário:</label>
+				<input type="text" id="campo_usuario" <%= f.text_field :nome %><br/><br/>
+				<label id="senha">Senha:</label>
+				<input id="campo_senha" <%= f.password_field :senha %> 
+				<br/><br/>
+				<%= submit_tag("Log In") %><br/>
+				<%= link_to "Novo Usuário", new_cadastro_usuario_path(@usuario) %>
+			</div>
+			<div class="itemlogin"><h4>Bem vindo ao Sistema de Agendamento de Quadras do CEAF!</h4></div>
+		<% end %>
+	</div>    
+	
 </body>
