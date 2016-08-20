@@ -7,6 +7,7 @@
       <th>Registro Usuário</th>
       <th>Email</th>
       <th>Senha</th>
+      <th>Confirme a sua senha</th>
       <th>Telefone</th>
       <th></th>
       <th></th>
@@ -20,6 +21,7 @@
         <td><%= cadastro_usuario.nome %></td>
         <td><%= cadastro_usuario.emailUsuario %></td>
         <td><%= cadastro_usuario.senha %></td>
+        <td><%= cadastro_usuario.password_digest %></td>
         <td><%= cadastro_usuario.telefone %></td>
       </tr>
     <% end %>

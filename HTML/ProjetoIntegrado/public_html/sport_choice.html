@@ -6,17 +6,22 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>GELF</title>
+        <title>Escolha do Esporte</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="javascript/routes.js"></script>
+         <link rel='stylesheet' href='style/style2.css'>
+         <link rel="shortcut icon" type="image/x-icon" href="images/icone.png" />
     </head>
     <body>
-        <div>
+         <div class="tudo" id="choice">
+        <div id="choosesport">
             <h3>Escolha seu esporte:</h3>
-            <input type="image" src="images/futebol.png" onclick="redirect_to_pag_usuario()">
-            <input type="image" src="images/tênis.png" onclick="redirect_to_pag_usuario()">
-            <input type="image" src="images/volei.png" onclick="redirect_to_pag_usuario()">
+            <input class="choice" type="image" src="images/futebol.png" onclick="redirect_to_pag_usuario()" onmouseover="images/futebolhover.png">
+            <input class="choice" type="image" src="images/tênis.png" onclick="redirect_to_pag_usuario()">
+            
+            <input class="choice" type ="image" src="images/volei.png" onclick="redirect_to_pag_usuario()">
         </div>
+         </div>
     </body>
 </html>

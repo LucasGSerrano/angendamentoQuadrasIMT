@@ -5,6 +5,7 @@ class CreateCadastroUsuarios < ActiveRecord::Migration
       t.string :registroUsuario
       t.string :emailUsuario
       t.string :senha
+      t.string :confirmacao_senha
       t.integer :telefone
       t.datetime :dataCadastro
       t.string :usuario_registroUsuario

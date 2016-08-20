@@ -6,19 +6,32 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>GELF</title>
+        <title>Agendamento de Quadras CEAF</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script type="text/javascript" src="javascript/routes.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="images/icone.png" />
+        <link rel='stylesheet' href='style/style.css' />
     </head>
     <body>
-        <h4>Sistema de Agendamento de Quadras</h4>
-        <div class="pag_login">
-            <label id="nome_usuario">Usuário:</label>
-            <input type="text" id="campo_usuario"/><br/><br/>
-            <label id="senha">Senha:</label>
-            <input type="text" id="campo_senha"/><br/><br/>
-            <button id="button" type="submit" onclick="redirect_to_sign_up()">Login</button>
-        </div>
+        <div class="tudo">
+            <div class="itemlogin">
+                <img id="iconemaua" src="images/Icon.png" alt="mauaicone">
+            </div>
+            <div class="itemlogin" id="entrar">
+                <br/>
+                <label id="nome_usuario">Usuário:</label>
+                <input type="text" id="campo_usuario"/>
+                <br/>
+                <br/>
+                <label id="senha">Senha:</label>
+                <input type="text" id="campo_senha"/>
+                <br/>
+                <br/>
+                <button id="button_login" type="submit" onclick="Nova()">Login</button>
+                <br/>
+            </div>
+            <div class="itemlogin"><h4>Bem vindo ao Sistema de Agendamento de Quadras do CEAF!</h4></div>
+        </div>    
     </body>
 </html>

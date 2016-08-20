@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160813134442) do
+ActiveRecord::Schema.define(version: 20160820124035) do
 
   create_table "agendamentos", force: true do |t|
     t.datetime "dataHora"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160813134442) do
     t.string   "usuario_registroUsuario"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "password_digest",         limit: 50
   end
 
   create_table "usuarios", force: true do |t|
