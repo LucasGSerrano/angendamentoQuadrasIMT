@@ -78,6 +78,13 @@ input[type=text]:focus {
     width: 32%;
 }
 
+password_field {
+    line-height: 1.8;
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+    width: 50%;
+}
 #edituser {
     padding: 10%;
     justify-content: center;
@@ -131,7 +138,7 @@ h4 {
     color: #080e2c;
 }
 
-button {
+#button {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -147,8 +154,8 @@ button {
     color: #ffffff;
     text-decoration: none;
 }
-button:hover,
-button:focus {
+#button:hover,
+#button:focus {
     border: 0px solid #0f1b57;
     background: #2e52ff;
     background: -webkit-gradient(linear, left top, left bottom, from(#2e52ff), to(#111d5e));
@@ -157,7 +164,7 @@ button:focus {
     color: #ffffff;
     text-decoration: none;
 }
-button:active {
+#button:active {
     background: #0e184e;
     background: -webkit-gradient(linear, left top, left bottom, from(#0e184e), to(#0e184e));
     background: -moz-linear-gradient(top, #0e184e, #0e184e);

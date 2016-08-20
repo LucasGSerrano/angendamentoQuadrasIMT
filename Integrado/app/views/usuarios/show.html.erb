@@ -1,40 +1,36 @@
-<head>
-      <title>Página Inicial</title>
-      <%= stylesheet_link_tag "style" %>
-      <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icone.png" />
-</head>
 
-<p id="notice"><%= notice %></p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @usuario.nome %>
-</p>
+   <h3>Bem-Vindo à Sua Página</h3>
+  <p>
+    <strong>Nome:</strong>
+    <%= @usuario.nome %>
+  </p>
 
-<p>
-  <strong>Último Agendamento:</strong>
-  <%= @usuario.ultimoAgendamento %>
-</p>
+  <p>
+    <strong>Último Agendamento:</strong>
+    <%= @usuario.ultimoAgendamento %>
+  </p>
 
-<p>
-  <strong>Situação de Matrícula:</strong>
-  <%= @usuario.situacaoMatricula %>
-</p>
+  <p>
+    <strong>Situação de Matrícula:</strong>
+    <%= @usuario.situacaoMatricula %>
+  </p>
 
-<p>
-  <strong>Foto:</strong>
-  <%= @usuario.fotoUsuario %>
-</p>
+  <p>
+    <strong>Foto:</strong>
+    <%= @usuario.fotoUsuario %>
+  </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @usuario.emailUsuario %>
-</p>
+  <p>
+    <strong>Email:</strong>
+    <%= @usuario.emailUsuario %>
+  </p>
 
-<p>
-  <strong>Telefone:</strong>
-  <%= @usuario.telefone %>
-</p>
+  <p>
+    <strong>Telefone:</strong>
+    <%= @usuario.telefone %>
+  </p>
 
-<%= link_to 'Edit', edit_usuario_path(@usuario) %> |
-<%= link_to 'Back', usuarios_path %>
+  <%= link_to 'Edit', edit_usuario_path(@usuario), id: 'button' %> |
+  <%= link_to 'Back', usuarios_path %>

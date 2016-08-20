@@ -1,5 +1,20 @@
-<h1>Novo usuário</h1>
+<head>
+      <title>Cadastro</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <%= stylesheet_link_tag "style2" %>
+      <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icone.png" />
+</head>
 
-<%= render 'form' %>
+<body>
+        <div class="tudo" id="signup">
+        <div>
+        <h3>Faça seu cadastro:</h3>
 
-<%= link_to 'Back', login_index_path %>
+
+	<%= render 'form' %>
+
+	<%= link_to 'Back', login_index_path %>
+        </div>
+        </div>
+</body>

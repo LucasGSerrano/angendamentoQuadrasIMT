@@ -1,33 +1,31 @@
-<h1>Listing cadastro_usuarios</h1>
-
-<table>
+  <table>
   <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Registro Usuário</th>
-      <th>Email</th>
-      <th>Senha</th>
-      <th>Confirme a sua senha</th>
-      <th>Telefone</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+  <tr>
+    <td>Nome</td>
+    <td>Registro Usuário</td>
+    <td>Email</td>
+    <td>Senha</td>
+    <td>Confirme a sua senha</td>
+    <td>Telefone</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
   </thead>
 
   <tbody>
-    <% @cadastro_usuarios.each do |cadastro_usuario| %>
-      <tr>
-        <td><%= cadastro_usuario.nome %></td>
-        <td><%= cadastro_usuario.emailUsuario %></td>
-        <td><%= cadastro_usuario.senha %></td>
-        <td><%= cadastro_usuario.password_digest %></td>
-        <td><%= cadastro_usuario.telefone %></td>
-      </tr>
-    <% end %>
+  <% @cadastro_usuarios.each do |cadastro_usuario| %>
+    <tr>
+      <td><%= cadastro_usuario.nome %></td>
+      <td><%= cadastro_usuario.emailUsuario %></td>
+      <td><%= cadastro_usuario.senha %></td>
+      <td><%= cadastro_usuario.password_digest %></td>
+      <td><%= cadastro_usuario.telefone %></td>
+    </tr>
+  <% end %>
   </tbody>
-</table>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'Cadastrar', new_cadastro_usuario_path %>
+  <%= link_to 'Cadastrar!', new_cadastro_usuario_path %>

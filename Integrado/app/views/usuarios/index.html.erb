@@ -1,18 +1,30 @@
-<h3>Bem-Vindo à Sua Página</h3>
+<head>
+        <title>Página Inicial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%= stylesheet_link_tag "style2" %>
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/images/icone.png" />
+</head>
 
-<table>
-  <tbody>
-    <% @usuarios.each do |usuario| %>
-      <tr>
-        <td><%= usuario.nome %></td>
-        <td><%= usuario.situacaoMatricula %></td>
-        <td><%= usuario.fotoUsuario %></td>
-        <td><%= usuario.emailUsuario %></td>
-        <td><%= usuario.telefone %></td>
-        <td><%= link_to 'Editar perfil', edit_usuario_path(usuario) %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<body>
+        <div class="tudo" id="home">
 
-<br>
+          <h3>Bem-Vindo à Sua Página</h3>
+          <table>
+            <tbody>
+              <% @usuarios.each do |usuario| %>
+                <tr>
+                  <td><%= usuario.nome %></td>
+                  <td><%= usuario.situacaoMatricula %></td>
+                  <td><%= usuario.fotoUsuario %></td>
+                  <td><%= usuario.emailUsuario %></td>
+                  <td><%= usuario.telefone %></td>
+                  <td><%= link_to 'Editar perfil', edit_usuario_path(usuario), id: 'button' %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+
+          <br>
+        </div>
+</body>
