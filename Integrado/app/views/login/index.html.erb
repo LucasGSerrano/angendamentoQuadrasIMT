@@ -1,25 +1,27 @@
 <head>
         <title>Agendamento de Quadras CEAF</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%= stylesheet_link_tag "style" %>
+	<link rel="shortcut icon" type="image/x-icon" href="/assets/images/icone.png" />
 </head>
 
 <body>
-	<div class="tudo">
-		<%= form_for(:login, url: login_path) do |f| %>
+	<%= form_for(:login, url: login_path) do |f| %>
+		<div class="tudo">	
 			<div class="itemlogin">
-				<img id="iconemaua" src="images/Icon.png" alt="mauaicone">
+				<%= image_tag("icone.png") %>
 			</div>
-
 			<div class="itemlogin" id="entrar"><br/>
 				<label id="nome_usuario">Usuário:</label>
-				<input type="text" id="campo_usuario" <%= f.text_field :nome %><br/><br/>
-				<label id="senha">Senha:</label>
-				<input id="campo_senha" <%= f.password_field :senha %> 
+				<%= f.text_field :nome %><br/><br/>
+				<label type="text" id="senha">Senha:</label>
+				<%= f.password_field :senha %> 
 				<br/><br/>
-				<%= submit_tag("Log In") %><br/>
-				<%= link_to "Novo Usuário", new_cadastro_usuario_path(@usuario) %>
+				<%= submit_tag("Log In") %><br/><br/>
 			</div>
 			<div class="itemlogin"><h4>Bem vindo ao Sistema de Agendamento de Quadras do CEAF!</h4></div>
-		<% end %>
-	</div>    
-	
+		</div> 
+		<%= link_to "Novo Usuário", new_cadastro_usuario_path(@usuario) %><br/>   
+	<% end %>
 </body>

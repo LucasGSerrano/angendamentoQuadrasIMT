@@ -24,7 +24,7 @@ body, html {
     text-align: center;
 }
 
-input[type=text] {
+text_field {
     line-height: 1.8;
     background-color: white;
     border: 3px solid white;
@@ -105,7 +105,7 @@ h4 {
     color: #080e2c;
 }
 
-#button_login {
+#submit_tag {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -121,8 +121,8 @@ h4 {
     color: #ffffff;
     text-decoration: none;
 }
-#button_login:hover,
-#button_login:focus {
+#submit_tag:hover,
+#submit_tag:focus {
     border: 0px solid #0f1b57;
     background: #2e52ff;
     background: -webkit-gradient(linear, left top, left bottom, from(#2e52ff), to(#111d5e));
@@ -131,7 +131,7 @@ h4 {
     color: #ffffff;
     text-decoration: none;
 }
-#button_login:active {
+#submit_tag:active {
     background: #0e184e;
     background: -webkit-gradient(linear, left top, left bottom, from(#0e184e), to(#0e184e));
     background: -moz-linear-gradient(top, #0e184e, #0e184e);
