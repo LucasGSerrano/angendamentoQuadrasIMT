@@ -1,6 +1,7 @@
-class Usuario < ActiveRecord::Base
-	has_secure_password
-
+class Usuario < ActiveRecord::Base	
+	devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, 
+         :validatable, :authentication_keys => {email: true, login: false}
 	validates :nome, presence: true, :uniqueness => true
 	validates :senha, presence: true
 	validates :password_digest, presence: true
